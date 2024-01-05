@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="21" Margin="42,44,0,0" VerticalAlignment="Top" Width="83"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Height="21" Margin="130,44,0,0" VerticalAlignment="Top" Width="82"/>
-        <ListBox HorizontalAlignment="Left" Height="288" Margin="42,97,0,0" VerticalAlignment="Top" Width="243" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <CheckBox x:Name="cbCurrent" Content="Current Account" HorizontalAlignment="Left" Height="21" Margin="42,44,0,0" VerticalAlignment="Top" Width="113"/>
+        <CheckBox x:Name="cbSavings" Content="Savings Account" HorizontalAlignment="Left" Height="21" Margin="173,43,0,0" VerticalAlignment="Top" Width="112"/>
+        <ListBox x:Name="lbxAccounts" HorizontalAlignment="Left" Height="288" Margin="42,97,0,0" VerticalAlignment="Top" Width="243" d:ItemsSource="{d:SampleData ItemCount=5}"/>
         <Label Content="Account Details" HorizontalAlignment="Left" Height="25" Margin="294,55,0,0" VerticalAlignment="Top" Width="98"/>
         <Label Content="First Name" HorizontalAlignment="Left" Height="25" Margin="294,95,0,0" VerticalAlignment="Top" Width="70"/>
         <Label Content="Balance" HorizontalAlignment="Left" Height="25" Margin="294,155,0,0" VerticalAlignment="Top" Width="70"/>
@@ -25,6 +25,9 @@
         <TextBlock x:Name="tblkBalance1" HorizontalAlignment="Left" Height="12" Margin="400,228,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="56"/>
         <TextBlock x:Name="tblkInterestDate" HorizontalAlignment="Left" Height="13" Margin="400,268,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="67"/>
         <TextBox x:Name="tbxTransactionAmount" HorizontalAlignment="Left" Height="17" Margin="400,302,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="67"/>
+        <Button x:Name="btnDeposit" Content="Deposit" HorizontalAlignment="Left" Height="23" Margin="553,106,0,0" VerticalAlignment="Top" Width="94"/>
+        <Button x:Name="btnWithdraw" Content="Withdraw" HorizontalAlignment="Left" Height="30" Margin="553,138,0,0" VerticalAlignment="Top" Width="94"/>
+        <Button x:Name="btnInterest" Content="Interest" HorizontalAlignment="Left" Height="21" Margin="553,182,0,0" VerticalAlignment="Top" Width="94"/>
 
     </Grid>
 </Window>
